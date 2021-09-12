@@ -1,0 +1,10 @@
+import React from 'react';
+import './about.scss';
+
+export default function About() {
+    return (
+        <div className="about" id="about">
+            <h1>about</h1>
+        </div>
+    )
+}
