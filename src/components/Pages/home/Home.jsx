@@ -2,6 +2,7 @@
 import "./home.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import Resume from "../../resume/ibragimov.pdf";
 
 export default function Home() {
   const textRef = useRef();
@@ -29,6 +30,13 @@ export default function Home() {
           <h3>
             Full Stack  <span ref={textRef}></span>
           </h3>
+        </div>
+        <div className="resume">
+          <a href={Resume} target="_blank" rel="noreferrer">
+            <span>
+              Download CV
+            </span>
+          </a>
         </div>
       </div>
     </div>

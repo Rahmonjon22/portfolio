@@ -39,6 +39,8 @@
   .right {
     flex: 0.5;
     position: relative;
+    margin-top: 15%;
+    margin-bottom: 15%;
 
     .wrapper {
       width: 100%;
@@ -91,6 +93,56 @@
           100% {
             opacity: 0;
           }
+        }
+      }
+    }
+    .resume{
+      float: right; 
+      transform: translate(-50%, -50%);
+      @include mobile{
+        float: none;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 40%;
+
+        
+        padding-left: 20px;
+      }
+      a{
+        display: block;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #333;
+        border: 2px solid #333;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        span{
+          position: relative;
+          z-index: 2;
+        }
+        &:after{
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background: #ff003b;
+          transition: all .35s;
+        }
+        
+        &:hover{
+          color: #fff;
+        }
+        
+        &:hover:after{
+          width: 100%;
         }
       }
     }
