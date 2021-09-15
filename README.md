@@ -3,4 +3,5 @@ Plan is to create Portfolio
 2  npm install react-router-dom  
 3 create componenets
 4 delete all the unneccessary files
-5
+5 npm install ityped
+6 npm i @material-ui/icons

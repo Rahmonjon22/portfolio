@@ -10,8 +10,8 @@ export default function Home() {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1500,
-      backSpeed:60,
-      strings: ["Developer", "Designer", "Content Creator"],
+      backSpeed: 60,
+      strings: ["Developer", "Designer", "Coder"],
     });
   }, []);
 
@@ -27,12 +27,9 @@ export default function Home() {
           <h2>Hi There, I'm</h2>
           <h1>Rahmonjon Ibragimov</h1>
           <h3>
-          Full Stack  <span ref={textRef}></span>
+            Full Stack  <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#portfolio">
-          <img src="picture/down.png" alt="" />
-        </a>
       </div>
     </div>
   );
