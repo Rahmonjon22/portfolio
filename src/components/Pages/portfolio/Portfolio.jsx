@@ -3,9 +3,7 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
   featuredPortfolio,
-  webPortfolio,
-  designPortfolio,
-  contentPortfolio,
+
 } from "../../../data";
 
 export default function Portfolio() {
@@ -14,39 +12,18 @@ export default function Portfolio() {
   const list = [
     {
       id: "featured",
-      title: "Featured",
+      title: "Portfolio",
     },
-    {
-      id: "web",
-      title: "Web App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
+
   ];
 
   useEffect(() => {
-    switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
-        break;
-      case "web":
-        setData(webPortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
-        break;
-      default:
-        setData(featuredPortfolio);
-    }
+    // switch (selected) {
+    //   case "featured":
+    setData(featuredPortfolio);
+    //     break;
+
+    // }
   }, [selected]);
 
   return (
@@ -64,12 +41,18 @@ export default function Portfolio() {
       <div className="container">
         {data.map((d) => (
           <div className="item">
-            <img
+
+            <img 
               src={d.img}
               alt=""
             />
             <h3>{d.title}</h3>
+            <div className="button-container">
+              <a className="button-box" href={d.demo} target="_blank" rel="noreferrer">DEMO</a>
+              <a className="button-box" href={d.code} target="_blank" rel="noreferrer">CODE</a>
+            </div>
           </div>
+
         ))}
       </div>
     </div>

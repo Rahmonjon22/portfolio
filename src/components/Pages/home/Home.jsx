@@ -20,7 +20,7 @@ export default function Home() {
     <div className="home" id="home">
       <div className="left">
         <div className="imgContainer">
-          <img src="picture/man.png" alt="" />
+          <img src="../src/picture/man.png" alt="" />
         </div>
       </div>
       <div className="right">

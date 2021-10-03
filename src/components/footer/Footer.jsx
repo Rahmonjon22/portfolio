@@ -7,9 +7,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <h3>Rahmonjon Ibragimov</h3>
-        <p className="paragraph-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Quae adipisci maiores impedit ratione explicabo, alias placeat, odio voluptates,
-          molestiae fugit consequatur. Nisi pariatur impedit natus ab illo aperiam minus esse!
+        <p className="paragraph-1">
+          Contact me via below links and lets build better future for younger generation! 
         </p>
         <ul className="socials">
           <li><a href="https://www.linkedin.com/in/rahmonjon-john-ibragimov-b03635203/" target="_blank" rel="noreferrer"> <LinkedIn className="icon" /></a></li>

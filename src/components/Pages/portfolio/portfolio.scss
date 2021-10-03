@@ -15,21 +15,22 @@
 // }
 @import "../../global.scss";
 
-.portfolio {background-color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow: hidden;
-            max-width: auto;
-            margin: 0px auto;
-            padding: 35px;
-            border-radius: 5px;
-            min-height: 90vh;
+.portfolio {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  max-width: auto;
+  margin: 0px auto;
+  padding: 35px;
+  border-radius: 5px;
+  min-height: 90vh;
 
   h1 {
     font-size: 50px;
 
-    @include mobile{
+    @include mobile {
       font-size: 20px;
     }
   }
@@ -40,7 +41,7 @@
     list-style: none;
     display: flex;
 
-    @include mobile{
+    @include mobile {
       margin: 10px 0;
       flex-wrap: wrap;
       justify-content: center;
@@ -54,13 +55,13 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    @include mobile{
+    @include mobile {
       width: 100%;
     }
 
     .item {
-      width: 220px;
-      height: 150px;
+      width: 420px;
+      height: 250px;
       border-radius: 20px;
       border: 1px solid rgb(240, 239, 239);
       margin: 10px 20px;
@@ -69,17 +70,39 @@
       justify-content: center;
       color: white;
       position: relative;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
       cursor: pointer;
 
-      @include mobile{
-        width: 130px;
-        height: 100px;
+      .button-container {
+        position: absolute;
+        margin-top: 200px;
+        
+        .button-box {
+          background-color: rgb(37, 150, 190);
+          border: none;
+          color: white;
+          padding: 5px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 15px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+      }
+
+      @include mobile {
+        width: 270px;
+        height: 200px;
+        margin: 10px;
       }
 
       h3 {
         position: absolute;
         font-size: 20px;
+      }
+      .button-container{
+        margin-top: 150px;
       }
 
       img {
