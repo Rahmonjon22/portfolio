@@ -21,7 +21,7 @@ export const featuredPortfolio = [
     {
       id: 3,
       title: "Benny Burger",
-      demo: "https://rahmonjon22.github.io/hamburgermenu/",
+      demo: "https://rahmonjon22.github.io/hamburgermenu/src/",
       code: "https://github.com/Rahmonjon22/hamburgermenu",
       img: burger,
     },
