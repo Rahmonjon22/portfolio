@@ -25,7 +25,7 @@ export default function Contact() {
           <input type="tel" placeholder="number" className="box" />
           <textarea placeholder="your message" class="box" cols="30" rows="10"></textarea>
           <input type="submit" value="send message" className="btn" />
-          {message} && <span>Thank you for your message, I will soon contact you</span>
+          {message} && <span>Thank you for your message, I will soon contact you :</span>;
         </form>
       </div>
     </div>
