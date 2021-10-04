@@ -9,7 +9,7 @@ export default function About() {
             <div class="container">
                 <div className="right" >
                     <div className="imgContainer">
-                        <img src="picture/myoffice.jpeg" alt="" />
+                        <img src="image/myoffice.jpeg" alt="" />
                     </div>
                 </div>
                 <div className="left" 
