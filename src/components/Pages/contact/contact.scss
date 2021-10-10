@@ -25,18 +25,20 @@
   .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
     .map {
-      flex: 1 1 42rem;
+      flex: 1 ;
       width: 100%;
+      margin: 50px 0 50px 0;
       padding: 2rem;
       box-shadow: var(0 0.5rem 1rem rgba(0, 0, 0, 0.1));
       border: var(0.1rem solid rgba(0, 0, 0, 0.1));
       border-radius: 0.5rem;
+      
     }
     form {
       padding: 2rem;
-      flex: 1 1 42rem;
+      flex: 1 32rem;
       box-shadow: var(0 0.5rem 1rem rgba(0, 0, 0, 0.1));
       border: var(0.1rem solid rgba(0, 0, 0, 0.1));
       text-align: center;
