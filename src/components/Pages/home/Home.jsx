@@ -3,6 +3,7 @@ import "./home.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import Resume from "../../resume/ibragimov.pdf";
+import MY_IMAGE from "../../../picture/man.png";
 
 export default function Home() {
   const textRef = useRef();
@@ -20,7 +21,7 @@ export default function Home() {
     <div className="home" id="home">
       <div className="left">
         <div className="imgContainer">
-          <img src="./image/man.png" alt="" />
+          <img src={MY_IMAGE} alt="myself" />
         </div>
       </div>
       <div className="right">
